@@ -1,51 +1,188 @@
+<title>✦ Jey's Little Writings ✦</title>
+
 <style>
-    div {
-        text-align: center;
-    }
-    pre {
-        width: 70%;
-        max-width: 700px;
-        margin: 60px auto;
-        white-space: pre-wrap;
-        font-weight: bold;
-        line-height: 1.15;
-    }
-    .normal-text {
-        font-family: 'Courier New', Courier, monospace;
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  body {
+    font-family: "DM mono", monospace;
+    background-size: 80px 80px;
+    background-image:
+      linear-gradient(to right, rgb(185, 185, 185) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(185, 185, 185) 1px, transparent 1px);
+    margin: 0;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px 35px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 2px solid black;
+
+    background: white;
+    backdrop-filter: blur(8px);
+
+    z-index: 100;
+  }
+
+  nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  nav :hover {
+    opacity: .5;
+  }
+
+  .home {
+    padding: 150px 100px;
+  }
+
+  h1 {
+    font-family: "Libre Baskerville";
+    font-size: 100px;
+    margin: 10px;
+  }
+
+  h2 {
+    font-family: "Libre Baskerville";
+    text-align: center;
+    padding-top: 50px;
+  }
+  hr {
+    border-top: 2px solid black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .about {
+    text-align: right;
+    padding-top: 70px;
+  }
+
+  .status {
+    text-align: center;
+    background: white;
+    border: 2px solid black;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 50px;
+  }
+
+  .status-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+  }
+
+  .stories {
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    margin: 60px auto;
+    border: 2px solid black;
+  }
+
+  pre {
+    width: 70%;
+    max-width: 700px;
+    margin: 60px auto;
+    white-space: pre-wrap;
+    line-height: 1.15;
+  }
+
+  .break {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .normal-text {
+      font-family: "DM mono", monospace;
     }
 
-    .italic-text {
-        font-family: 'Times New Roman';
-        font-style: italic;
-        font-size: large;
+  .italic-text {
+      font-family: "Libre Baskerville";
+      font-style: italic;
+      line-height: 2;
     }
+
+  footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid black;
+    background: white;
+  }
 </style>
 
-<div>
-    <h1>✦ Jey's Little Writings ✦</h1>
-    <p>✦ caffeinatedjey ✦</p>
-    <a href="https://www.instagram.com/caffeinatedjey.exe" target="_blank">Instagram</a> <a>//</a> <a href="https://www.threads.com/@caffeinatedjey.exe" target="_blank">Threads </a>
-    <p>
-        ⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩
-        <br><br>
-        I'm Jey! :D 
-        <br><br>
-        I mostly just make art and vibe ~ (ﾉ´ヮ`)ﾉ*: ･ﾟ <br><br>
-        I wrote this, and I didn't really know where to <br>
-        post it, so I made this website at like 2 a.m. lol
-        <br><br>
-        I'll probably revamp the site when I have the time.
-        <br><br>
-        I'll post more stories, probably,
-        when I get inspiration ;p
-        <br><br>
-        ⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩⬩
-        <br><br>
-    </p>
-    <h2>Nevertheless, Neverthemore</h2>
+<body>
+
+<nav>
+  <a href="#">✦ Jey's Little Writings ✦</a>
+  <div>
+    <a href="https://www.instagram.com/caffeinatedjey.exe" target="_blank">INSTAGRAM</a>
+    <span>//</span>
+    <a href="https://www.threads.com/@caffeinatedjey.exe" target="_blank">THREADS</a>
+  </div>
+</nav>
+
+<section class="home">
+  <p>Last Update:<br>
+    12.09.26</p>
+  <h1>
+    Jey's<br>Little<br>Writings
+  </h1>
+  <p class="about">
+    I'm Jey! :D 
+    <br><br>
+    I mostly just make art and vibe ~ (ﾉ´ヮ`)ﾉ*: ･ﾟ 
+    <br><br>
+    I wrote some stuff, and I didn't really know where to <br>
+    post it, so I'm posting it here.
+    <br><br>
+    I'll post more stories, probably,
+    when I get inspiration ;p
+  </p>
+</section>
+
+<hr>
+<section class="status">
+<P>
+  ✦ STORIES ✦
+</P>
+<hr style="border-top: 2px solid black; 
+    margin-left: 500px;
+    margin-right: 500px;">
+<div class="status-parent">
+  <span> Nevertheless, Neverthemore <br> //FINISHED// <br> Slice of life / Horror </span> 
+  <span> The Wisteria council in the Courtyard <br> // WIP // <br> Mystery / Whimsical / Romance </span>
 </div>
-    
+</section>
+<hr>
+
+<section class="stories">
+
+<h2>Nevertheless, Neverthemore</h2>
+<div class="break">✦ ✦ ✦</div>
+
 <pre class="normal-text">
+
 I don't know when it started, but I noticed that it's been raining for a few days now. I don't go outside much, so I suppose it makes sense. But seriously... it hasn't stopped.
 
 I looked out the window today and people were going on about their day like this was nothing out of the usual. 
@@ -53,11 +190,9 @@ I looked out the window today and people were going on about their day like this
 Well, okay, they probably got used to it by now. But some people are walking without umbrellas nor raincoats, like, half of them?
 
 Whatever, it's none of my business, anyway.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 It's night, and it's pitch black outside. Looking at my window, it's like staring into a void. 
 
 It's still raining, of course, I still hear the tiny wet splash of droplets against the leaves of the trees.
@@ -67,11 +202,9 @@ I've grown a habit of pulling up my chair to the window and looking at the littl
 It's faint, but it's, like, positioned exactly at the top of the hills, so I guess it's a station of some sort that they built recently.
 
 I have tea sometimes, maybe some biscuits if I'm hungry, but usually it's a small break from my seemingly endless work.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 I ran out of eggs, so I had to go to Roger's today. It's a shame, I was nearly done with my manuscript, but the hunger was killing me.
 
 It's such a small store, Roger's, but you'd be surprised at the selection of items you can find there, imported stuff too. 
@@ -89,11 +222,9 @@ Then, I had a sudden realization, my mouth dropping, but I burst out into a cack
 Mr. Roger looked a bit puzzled at first, glancing outside for the briefest of moments, before turning to me with a strained smile and a nod.
 
 It was a bit weird, but he's getting old, so I just chalked it up to him doing old man things.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 Today was scary.
 
 I feel stupid for saying it, but I really didn't know if I should've continued working, or to have hidden. I mean, I knew something like this would happen, but...
@@ -113,45 +244,35 @@ I dared to take a peek after a bit, because the sirens felt further away, and ev
 But I noticed the red dot wasn't lit. The sirens were so far away from the station, so why? Could it be that they sent sirens across the whole town?
 
 Oh, the station workers, they're probably hiding too. Seriously, my mind is sorta blank after that whole ordeal. I want to work a bit more, but I think I'll actually sleep for eight hours tonight.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 I worked on the manuscript a lot today. I feel proud. I feel like I actually made some progress.
 
 I think I will eat some pancakes with whipped cream to celebrate.
 
 It was yummy. I am happy.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 Apparently it was just a drill.
 
 Are they sick? Why would they call a drill with sirens?
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 So, I heard a ruckus outside and looked out the window. Kids were playing football. The little raincoats were so cute. 
 
 My mom also got such coats for me when I was little. I wonder if I looked just as adorable, bumbling around.
 
 Some of them weren’t wearing raincoats. I guess they didn’t listen to their parents, or maybe they have super strong immune systems, haha.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 I want a cat.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 I wonder what it's like, walking in the rain, soaking wet, going to work everyday.
 
 I see this one guy walking by the window.
@@ -159,11 +280,9 @@ I see this one guy walking by the window.
 He's the typical image of a salary man- neat hair, a dull suit, thick glasses, and a briefcase. Haha, who uses briefcases these days?
 
 Speaking of work, I better start the manuscript, my head hurts trying to remember everything.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 I'm trying not to waste any paper, because frankly, it's hard to buy and carry papers in this rain.
 
 Actually, it's probably not, and I'm just trying to delay the trip.
@@ -171,11 +290,9 @@ Actually, it's probably not, and I'm just trying to delay the trip.
 But still, my heart always drips with guilt when I write a whole page and I don't like it and just end up crumbling it up.
 
 Sometimes I dig in the trash because I realized I liked a previous version a lot more, and rewrite it in a better way.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 I'm having herbal tea tonight.
 
 My back hurts, so I'm taking a break. The workers at the station are so diligent, working every night. 
@@ -185,11 +302,9 @@ Even on a holiday, I am greeted by that dot when nothing else is visible.
 I think they planted a new tree by the windows? I hear a different little sound of the rain. It's a little slower and softer.
 
 ...maybe I'm just imagining things, I've been working so much lately.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 There was a fight in the lobby today.
 
 Apparently Mrs. Nuo said to Ms. June that it wasn't raining, and that she shouldn't be using an umbrella so carelessly.
@@ -199,11 +314,9 @@ Like, what? Obviously, it's raining. It's been raining.
 I've been struggling to stock my papers and ink, and even caught a few colds, and I'm sure the other residents have faced such hardships as well.
 
 Whatever, what's the point of getting mad at an old grandma?
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 I should start writing the manuscript.
 
 Seriously, I’ve been putting it off for so long. I haven’t written a single line, and my head hurts.
@@ -211,11 +324,9 @@ Seriously, I’ve been putting it off for so long. I haven’t written a single 
 But it’s like, not even noon.
 
 I’ll just rest, I think, and look at the dot.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 My eyes and neck hurt, so I looked outside, and the sky was very bright today!
 
 It was raining a little less, but there were rainbow clouds! I have never seen anything like that before with my own two eyes.
@@ -229,11 +340,9 @@ Such people really do exist, huh?
 The grass was starting to hurt like needles, so I went back inside soon after.
 
 My room felt cold, haha, is that what the heat of the sun does to you? I could see the evaporation steaming from my hand!
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 The dot has friends visiting it tonight.
 
 It was a beautiful meteor shower. 
@@ -245,11 +354,9 @@ It also made me realize the hills were a lot bigger than I remembered- or, like,
 I saw more hills way beyond the one the dot was on.
 
 Maybe it was because I was a small child, the hill covered all the other hills.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 Ms. June visited today.
 
 Apparently she was pretty rattled by the confrontation with Mrs. Nuo.
@@ -268,18 +375,16 @@ Apparently she was pretty rattled by the confrontation with Mrs. Nuo.
 
 Ms. June looked at the picture for a while. I couldn't read her expression, but I could tell she was thinking a lot. She finally looked at me again.
 
-“I've been feeling scared recently.” She spoke in a solemn voice all of a sudden. “Even if we have differences, I- I wanted to know if it would be okay if I visited you regularly- I'll just stay here for most of the day and I won't bother you. Is that okay?”
+ “I've been feeling scared recently.” She spoke in a solemn voice all of a sudden. “Even if we have differences, I- I wanted to know if it would be okay if I visited you regularly- I'll just stay here for most of the day and I won't bother you. Is that okay?”
 
 I was silent. I didn't know what to say.
 
 “No, I'm sorry, you would disturb my work.”
 
 Ms. June never visited me again.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 Rain, rain, go away,
 Come again another day,
 Here I lay,
@@ -303,17 +408,15 @@ Rain.
 Rain
 
 rain
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 Today I bought blueberries from Roger's.
 
 They were sweet. I made some jam. I don't have any bread, though, so I don't know what I'll eat it with, yet.
 </pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
 <pre class="italic-text">
 An angel fell from the heavens, and the beast of the sea swallowed it whole, alas the worthy was never meant for the glory of victory, for light penetrated its throat and rays of the divine lit the universe so bright, for a moment, there was no such thing as evil.
@@ -323,7 +426,7 @@ With crimson wings tearing its back, the bellowing beast was granted the honour 
 Lo, the angel /esmi-rop/ was many, but the many were few, looking down the well of the earth, they spoke in whispers for the echoes were enough, for the worthy /swokn/ would waste it too.
 </pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
 <pre class="normal-text">
 Tonight is so peaceful.
@@ -333,19 +436,15 @@ I sat by the window like always, and looked at the dot. I had a bit of that jam 
 I really hope it's just me being paranoid, but I feel like they will send sirens again, for real this time.
 
 But I will keep working, even if I have to take drastic measures.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 There was a little ladybug on my windowsill this morning. I guess it was tired from flying in the rain. 
 
 Poor thing, having to navigate the downpour of droplets the size of its body. I gave it some jam.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 Apparently Roger’s is shutting down.
 
 I was running errands, and to buy more paper, because I had written a very important section somewhere else, and now I can’t find it, and I don’t remember it well either.
@@ -371,11 +470,9 @@ Mr. Roger thought with eyes brimming with resignation and sorrow.
 I watched from a distance through the curtain of rain as Mr. Roger got in his rusty truck and left. I don’t know why, but I stood there for a while, under my umbrella.
 
 My shoes were beginning to soak, so then I walked back home.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 I made pancakes again, and ate it with the blueberry jam.
 
 I’m a bit sad. The lady bug had gotten trapped in the jam, like a fossil. While I was cleaning up the windowsill, I wondered,
@@ -383,11 +480,9 @@ I’m a bit sad. The lady bug had gotten trapped in the jam, like a fossil. Whil
 “I don’t know why it came and sat on my sill, but I just wanted to help, but maybe what I consider to be help was incomprehensible to it. It must have cursed me as it took its last breath.”
 
 It made me realize that when offered help, not only do you need to recognize it, but also know how to use it. It’s not the helper’s fault nor yours if things don’t go well.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 The dot gave me a fright today!
 
 I was looking out as usual, looking at it, when it abruptly disappeared!
@@ -401,7 +496,7 @@ But it lit up again, to my surprise. I just stared at it with bewilderment. Then
 I had to take a few deep breaths to calm myself down, but eventually, I went to grab a cloth to clean up the spilled tea.
 </pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
 <pre class="italic-text">
 Foretold, alas, forgotten.
@@ -411,7 +506,7 @@ Time will tell tales of the beast, but it lies, it lies as it breeds truth. It �
 Never in the heavens nor earth, shall there be peace, for chaos will hold it in reverence.
 </pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
 <pre class="normal-text">
 I had to take the ferry to the other side of town to buy more paper and ink.
@@ -419,21 +514,17 @@ I had to take the ferry to the other side of town to buy more paper and ink.
 I think the last time I was there was when my mom took me to the dentist. It was scary at the time, but they gave me a lollipop for having such nice teeth, haha.
 
 This side of town changed quite a bit, becoming a lot more empty. But thankfully, the print and press was still running- well, they were packing as well, and just gave me a box for free.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 There were fireflies outside the window tonight.
 
 I guess it’s summer? I can’t tell with the rain, haha.
 
 But it was nice, watching them dance around the dot, it was like a show.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 I knew it.
 
 I knew they would do it for real this time.
@@ -445,11 +536,9 @@ I took the manuscript and the camera and ran into the hills before they could se
 They are lying, that's why they send sirens /Su/. They tell people they are protecting them from disaster, but no, there is no disaster in our beloved home.
 
 They just want us to be pawns in their little game, and take our land to ruin with filth. They will pay, one day, for displacing us.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 It's been a few days, but I've managed to survive on what I managed to grab from the kitchen.
 
 So far, the woods have been kind. I didn't get attacked or anything, and I've found some shelter.
@@ -457,61 +546,47 @@ So far, the woods have been kind. I didn't get attacked or anything, and I've fo
 I think the ink will last for a month, so I'll probably be fine.
 
 But it's in this situation that the rain is turning out to be a bigger hassle. Small pools gather if I stay in one place too long. I guess I'm really making a dent in the dirt for that to happen.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 I'm further up the hill, and now I can see the sirens all across the town, red and blue, loud and annoying.
 
 I'm going to go even higher, to maybe where the station is. There's probably food there, and I definitely will not be miserably soaking wet. This damn grass is poking through my shoes, too, so I better hurry.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 What the hell.
 
 I didn't notice, but the hill has a plateau? 
 
 I'm walking across a flat plain with knee length grass. The storm clouds have gotten more violent, slamming the rain against my body, but I have no choice but to keep going.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 There's...
 
 There's water up to my knees.
 
 It's so weird, walking through grass and water, as if traversing through honey.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 I've been walking for a while, I'm tired. I'm looking around and there's just fog and mist, I can't even see the hills, and now there's a storm,and it's so loud and strong.
 
 I keep tripping, but I can't get my work wet, so I somehow manage to stay upright,  but it's getting difficult.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 I can't hear my own thoughts- and my shoes are full of tiny holes and keep getting stuck in the mud. The hem of my pant leg has torn, as well, I think. It's like a thousand needles have wedged themselves right into my nerves and veins.
-</pre>
 
-<div>✦ ✦ ✦</div>
+<div class="break">✦ ✦ ✦</div>
 
-<pre class="normal-text">
 The red dot!
 
 It's bright now, and it's the size of the moon!
 
 My- my camera! It probably won't work, but the flash may illuminate-
-
 </pre>
-
 <pre class="italic-text">
 The beast of the sea, its size veiling the sky and clouds spiraling toward its eye, bellowed, staring unto time; its wings of blood shivered in the divine light.
 
@@ -521,3 +596,10 @@ And the siren spread its wings, the vessel hath reborn anew-
 
 Unto the earth, the rain hath ceased.
 </pre>
+</section>
+
+<footer>
+  <span>© caffeinatedjey</span>
+</footer>
+
+</body>
